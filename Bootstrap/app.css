@@ -1,0 +1,267 @@
+*{
+    padding:0 ;
+    margin:0;
+    box-sizing: border-box;
+    }
+
+
+body{
+    
+    background-image: linear-gradient(to right, red,orange);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover ;
+    font-family: 'Arimo', sans-serif;
+}
+
+/* grid */
+
+.grid-container{
+    /* background-color: coral; */
+    padding: 5px ;
+    display: grid; /* se declara siempre en el padre */ 
+    /* grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    grid-gap: 5px;   */
+
+    grid-template-areas: 
+    'header header header'
+    'main main main'
+    'main main main'
+    'footer footer footer'
+    ;
+
+    align-items: center;
+    
+}
+
+.grid-container div{
+    /* background-color: darkkhaki; */
+    padding: 5px;
+    /* border: solid 1px yellow; */
+}
+
+
+
+
+.header{
+    grid-area: header;
+    width: 100%;
+}
+
+.main{
+    grid-area: main;
+    display: flex;
+    justify-content: center;
+    flex-flow: wrap;
+   
+}
+
+
+
+.footer{
+    grid-area: footer;
+    width: 100%;
+}
+
+
+/* Elementos body */
+
+p{ 
+    color: white;
+    text-align: center;
+    text-justify: inter-word;
+    font-size: 30px;
+}
+
+.shop{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+/* header */
+ 
+.header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+  }
+  
+  .header li {
+    float: left;
+    padding: 10px;
+  }
+  
+  .header li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .header li a:hover:not(.active) {
+    background-color: #04AA6D;
+    color: white;
+  }
+  
+  .header .active {
+    background-color: #04AA6D;
+  }
+
+  .header ul p{
+      font-size: 30px;
+      color: white;
+  }
+
+  /* footer */
+ 
+  .footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    
+    top: 0;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+  
+  .footer li {
+    padding: 10px;
+  }
+  
+  .footer li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .footer li a:hover:not(.active) {
+    background-color: #04AA6D;
+    color: white;
+  }
+  
+  .footer .active {
+    background-color: #04AA6D;
+  }
+
+  .footer ul p{
+      font-size: 30px;
+      color: white;
+  }
+/*NOSOTROS*/
+.nosotros{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+  /*FORMULARIO*/
+  .formulario-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  /* imagenes */
+
+  .homeIMG {
+    float: left;
+    width: 33%;
+    height: auto;
+  }
+
+    .carta{
+        border: 1px solid #333;
+    }
+
+    /* img{
+        margin: 1.66;
+        width: 30%;
+        padding: 15px;
+    } */
+  
+  div.gallery img {
+    width: 100%;
+    height: 300px;
+    
+  }
+  
+  div.desc {
+    padding: 15px;
+    text-align: center;
+  }
+  
+  
+  
+  .responsive {
+    float: left;
+    width: 15%;
+    height: auto;
+    padding: 15px;
+  }
+  
+  @media only screen and (max-width: 700px) {
+    .responsive {
+      width: 40%;
+      margin: 6px 0;
+    }
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .responsive {
+      width: 80%;
+    }
+  }
+  
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  /* animaciones */
+
+  .animado {
+        width: 100px;
+        height: 50px;
+        background-color: #333;
+        color: white;
+        transition: width 0.75s;
+        border-radius: 8%;
+     }
+    
+  .animado:hover {
+        width: 150px;
+        background: #04AA6D;
+        color: white;
+       
+    }
+
+  #movimiento:hover{
+    transform: translate(10px, 10px);
+  }
+
+  
+
+
+  /* IMAGE OVERLAY */
+
+  
