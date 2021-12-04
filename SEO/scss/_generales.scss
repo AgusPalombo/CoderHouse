@@ -1,0 +1,40 @@
+@import "vars";
+
+body{
+    background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover ;
+}
+
+
+.navbar{
+    height: 70px;
+    
+    .nav-item{
+        .nav-link:hover{
+            background-color: $colorHover;
+        }
+
+        .dropdown-item{
+            .dropdown-item:hover{
+                background-color: $colorHover !important;
+            }
+        }
+
+        
+    }
+}
+
+.carousel{
+    border: $border;
+}
+
+.overlay{
+    background-color: black;
+    border: $colorHover 10px solid;
+}
+
+#main{
+    align-items: center;
+}

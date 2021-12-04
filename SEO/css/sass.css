@@ -1,0 +1,22 @@
+body {
+  background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
+
+.navbar {
+  height: 70px; }
+  .navbar .nav-item .nav-link:hover {
+    background-color: #50c878; }
+  .navbar .nav-item .dropdown-item .dropdown-item:hover {
+    background-color: #50c878 !important; }
+
+.carousel {
+  border: 2px solid black; }
+
+.overlay {
+  background-color: black;
+  border: #50c878 10px solid; }
+
+#main {
+  align-items: center; }
